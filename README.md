@@ -3,12 +3,11 @@
 
 ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/YagoBiermann/hello-world-script?style=flat-square)     ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/YagoBiermann/hello-world-script?style=flat-square) ![powershell: v5.1 (shields.io)](https://img.shields.io/badge/powershell-v5.1-blue?style=flat-square&logo=appveyor) ![status: in development (shields.io)](https://img.shields.io/badge/status-in%20development-orange?style=flat-square&logo=appveyor) ![GitHub](https://img.shields.io/github/license/YagoBiermann/hello-world-script?style=flat-square)
 ___
-> **Script that draw "Hello World" in GitHub contributions.**
-> 
+> **Script that draw "Hello World" in GitHub contributions.** 
 ![Imgur](https://i.imgur.com/EMsrdhC.png)
 ___
 ## Go to specific section
-[Overview ](#introduction) / [Known issues and future features](#issues-and-features) / [installation guide](#installation) / [License](#license)
+[Overview](#overview) / [Known issues and future features](#Known-issues-and-future-features) / [installation guide](#installation-guide) / [License](#license)
 
 
 # Overview 
@@ -38,7 +37,7 @@ Good question little boy! unfortunately it does not change the millions tons of 
 ##
 ### Step one
 - First of all, create an empty repository on your github account
-- **Do not fork or clone the project, download as zip instead.** **[Download here](#https://github.com/YagoBiermann/hello-world-script/archive/v1.0-current.zip)**
+- **Do not fork or clone the project, download as zip instead.** **[Download here](#https://github.com/YagoBiermann/hello-world-script/archive/v1.0.zip)**
 - After downloaded as zip, extract the files and open git bash inside the directory
 - then go to step two
 ### Step two
@@ -53,8 +52,8 @@ Good question little boy! unfortunately it does not change the millions tons of 
 - Now you must configure a scheduled task on Windows 10 to run the script everyday in a specific time
 - For this, press **Windows key + R** and type it **taskschd.msc**
 ![open taskschd.msc](https://i.imgur.com/vxqRqeN.png)
-- On top right corner,  select **create basic task**
- ![create basic task](https://i.imgur.com/AbZNHIX.png)
+- On top right corner, select **create basic task**
+![create basic task](https://i.imgur.com/AbZNHIX.png)
 - Type the name and description
 ![HelloWorld-Script](https://i.imgur.com/MxJZKMX.png)
 - in the trigger tab, select **daily**, then change the hour to one that your pc is on
