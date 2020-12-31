@@ -51,13 +51,21 @@ Good question little boy! unfortunately it does not change the millions tons of 
 ### Step three
 - Now you must configure a scheduled task on Windows 10 to run the script everyday in a specific time
 - For this, press **Windows key + R** and type it **taskschd.msc**
+
 ![open taskschd.msc](https://i.imgur.com/vxqRqeN.png)
+
 - On top right corner, select **create basic task**
+
 ![create basic task](https://i.imgur.com/AbZNHIX.png)
+
 - Type the name and description
+
 ![HelloWorld-Script](https://i.imgur.com/MxJZKMX.png)
+
 - in the trigger tab, select **daily**, then change the hour to one that your pc is on
+
 ![task trigger](https://i.imgur.com/41zYcox.png)
+
 - In the next tab, select **Start a program** and enter the follow:
 - *Program/Script:* **powershell.exe**
 - *Add arguments:* **"-ExecutionPolicy Bypass -File C:\\path\\to\\directory\\main.ps1"**
