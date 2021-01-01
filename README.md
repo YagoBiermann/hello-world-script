@@ -7,7 +7,7 @@ ___
 ![Imgur](https://i.imgur.com/EMsrdhC.png)
 ___
 ## Go to specific section
-[Overview](#overview) / [Known issues and future features](#Known-issues-and-future-features) / [installation guide](#installation-guide) / [License](#license)
+[Overview](#overview) / [Known issues and future features](#Known-issues-and-future-features) / [Installation guide](#installation-guide) / [License](#license)
 
 
 # Overview 
@@ -15,7 +15,7 @@ ___
 This is a script made in powershell that will draw "hello world" in github contributions throughout 2021. ~~if it works~~
 
 - ### And how it works?
-Basically, it does automatic commits when the current day reach out a date in the json file. For each commit it write a number into *commitFile.txt* that represents each of times the script made a commit.
+Basically, it does automatic commits when the current day reach out a date in the json file. For each commit it write a number into *commits.txt* that represents each of times the script made a commit.
 
 - ### Got it! but...How it's going to impact the world and how relevant this is for our community?
 Good question little boy! unfortunately it does not change the millions tons of carbon dioxide that's emitted daily in the atmosphere and not find automatically all the vulnerabilities of security on your website. I just did it because everytime i saw this table of contributions i thought to myself *"this is a really good place to do a pixel art"*, and i never see anybody doing it before.
@@ -33,15 +33,14 @@ Good question little boy! unfortunately it does not change the millions tons of 
 
 # Installation guide
 ### *Important!*
-*this was only tested on Windows 10 with powershell 5.1*
+*it was only tested on Windows 10 with powershell 5.1*
 ##
 ### Step one
 - First of all, create an empty repository on your github account
-- **Do not fork or clone the project, download as zip instead.** **[Download here](#https://github.com/YagoBiermann/hello-world-script/archive/v1.0.zip)**
+- **Do not fork or clone the project, download as zip instead.** **[Download here](https://github.com/YagoBiermann/hello-world-script/archive/v1.0.zip)**
 - After downloaded as zip, extract the files and open git bash inside the directory
-- then go to step two
 ### Step two
-// type the commands in your git bash terminal, where have the '< >' you may replace with your own configuration name
+// type the commands in your git bash terminal, where have the '< >' you must replace with your own configuration name
 
     git init; git add .; git commit -m "first commit"
     git branch -M main
@@ -49,7 +48,7 @@ Good question little boy! unfortunately it does not change the millions tons of 
     git push -u origin main
 
 ### Step three
-- Now you must configure a scheduled task on Windows 10 to run the script everyday in a specific time
+- Now you need to configure a scheduled task on Windows 10 to run the script everyday in a specific time
 - For this, press **Windows key + R** and type it **taskschd.msc**
 
 ![open taskschd.msc](https://i.imgur.com/vxqRqeN.png)
@@ -75,6 +74,6 @@ Good question little boy! unfortunately it does not change the millions tons of 
 ![start a program](https://i.imgur.com/KAcBOUG.png)
 - and finally finish the program
 > if everything goes as expected Windows going to run the script everyday at the time you chose.
-> So, the script will check if the date on your system is the same of your json file, if it is,  the script will make the commit and push to your remote repository
+> So, the script will check if the date on your system is the same of your json file, if it is, the script will make the commit and push to your remote repository
 # License
 Do whatever you want! **MIT License**
