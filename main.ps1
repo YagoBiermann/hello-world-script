@@ -39,7 +39,7 @@ function MakeCommit {
 function CheckJsonValueAndCommit {
     $JsonValue = ReturnJsonValue
     if ($JsonValue -eq "special") {
-        MakeCommit -TimesOfCommit 15
+        MakeCommit -TimesOfCommit 20
     }
     elseif ($JsonValue -eq "normal") {
         MakeCommit -TimesOfCommit 5
