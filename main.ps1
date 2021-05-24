@@ -42,7 +42,7 @@ function CheckJsonValueAndCommit {
         MakeCommit -TimesOfCommit 20
     }
     elseif ($JsonValue -eq "normal") {
-        MakeCommit -TimesOfCommit 8
+        MakeCommit -TimesOfCommit 10
     }
     Write-Host "All done for today`nClosing the script"
     Start-Sleep 5
