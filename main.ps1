@@ -27,13 +27,16 @@ function MakeCommit {
     for ($i = 1; $i -le $TimesOfCommit; $i++) {
         git add .
         git commit -m "commit number: $($CommitNumber)" | Out-Null
-        git push origin main | Out-Null
         Clear-Host
         start-sleep 2
         Write-Host "Commit Number: $($CommitNumber)`n"
         Add-Content -Path "./files/commits.txt" -Value "Commit Number: $($CommitNumber +1)" 
         $CommitNumber++
     }
+}
+
+function gitPush {
+    git push origin main    
 }
 
 function CheckJsonValueAndCommit {
@@ -70,6 +73,7 @@ function Main {
     DoTests
     Write-Host "All tests done! continuing"
     CheckJsonValueAndCommit
+    gitPush
 }
 
 Main
